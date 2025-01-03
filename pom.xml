@@ -133,7 +133,7 @@
             <dependency>
                 <groupId>software.amazon.awscdk</groupId>
                 <artifactId>cdk-cloud-assembly-schema</artifactId>
-                <version>36.0.6</version>
+                <version>39.1.35</version>
             </dependency>
             <dependency>
                 <groupId>software.amazon.awscdk</groupId>
