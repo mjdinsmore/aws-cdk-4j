@@ -7,7 +7,7 @@ import org.apache.commons.compress.utils.Lists;
 import org.apache.commons.lang3.ObjectUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import software.amazon.awscdk.cloudassembly.schema.*;
+import software.amazon.awscdk.cloud_assembly_schema.*;
 import software.amazon.awscdk.cxapi.CloudAssembly;
 import software.amazon.jsii.JsiiObject;
 import software.amazon.jsii.Kernel;
@@ -85,7 +85,7 @@ public class CloudDefinition {
 
     public static CloudDefinition create(CloudAssembly cloudAssembly) {
         Path cloudAssemblyDirectory = Paths.get(cloudAssembly.getDirectory());
-        AssemblyManifest assemblyManifest = (AssemblyManifest) cloudAssembly.getManifest();
+        AssemblyManifest assemblyManifest = cloudAssembly.getManifest();
 
         Map<String, FileAsset> fileAssets = Maps.newHashMap();
         Map<String, DockerImageAsset> imageAssets = Maps.newHashMap();
