@@ -85,7 +85,7 @@ public class CloudDefinition {
 
     public static CloudDefinition create(CloudAssembly cloudAssembly) {
         Path cloudAssemblyDirectory = Paths.get(cloudAssembly.getDirectory());
-        AssemblyManifest assemblyManifest = cloudAssembly.getManifest();
+        AssemblyManifest assemblyManifest = (AssemblyManifest) cloudAssembly.getManifest();
 
         Map<String, FileAsset> fileAssets = Maps.newHashMap();
         Map<String, DockerImageAsset> imageAssets = Maps.newHashMap();
