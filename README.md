@@ -35,8 +35,8 @@ Requirements:
 |---------------------------|------------|
 | Java                      | >= 8       |
 | Maven                     | >= 3.5     |
-| AWS CDK                   | <= 2.134.0 |
-| AWS Cloud Assembly Schema | <= 36.0.0  |
+| AWS CDK                   | <= 2.173.4 |
+| AWS Cloud Assembly Schema | <= 39.1.35 |
 
 _To bump up, open an issue or [see here](#aws-cdk-dependency-bump)_
 

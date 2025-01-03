@@ -2,13 +2,9 @@ package io.dataspray.aws.cdk.context;
 
 import com.google.common.collect.ImmutableMap;
 import io.dataspray.aws.cdk.CdkException;
-import software.amazon.awscdk.cloudassembly.schema.HostedZoneContextQuery;
+import software.amazon.awscdk.cloud_assembly_schema.HostedZoneContextQuery;
 import software.amazon.awssdk.services.route53.Route53Client;
-import software.amazon.awssdk.services.route53.model.GetHostedZoneRequest;
-import software.amazon.awssdk.services.route53.model.GetHostedZoneResponse;
-import software.amazon.awssdk.services.route53.model.HostedZone;
-import software.amazon.awssdk.services.route53.model.ListHostedZonesByNameRequest;
-import software.amazon.awssdk.services.route53.model.ListHostedZonesByNameResponse;
+import software.amazon.awssdk.services.route53.model.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
